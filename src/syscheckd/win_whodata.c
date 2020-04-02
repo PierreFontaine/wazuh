@@ -1481,7 +1481,7 @@ void whodata_adapt_path(char **path, int build) {
                 return;
             }
         }
-        if (build < win7build || !(strstr(*path, exempt_win7)))
+        if (build < win7build || !(strstr(*path, exept_win7)))
                     new_path = wstr_replace(*path, system_32, system_native);
 
     } else if (strstr(*path, system_wow64)) {
